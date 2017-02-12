@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Narrow Down Your Menu Choice</title>
+    <style>
+    .table{
+      display: block;
+      text-align: center;
+      border: 1px solid black;
+      align: center;
+      cell-padding: 10px;
+    }
+    body{
+      background-color: #b3ffd9;
+    }
+    </style>
+  </head>
+<body ng-app="MenuApp">
+
+    <div class="table">
+        <h1> Restaurant Menu </h1>
+    </div>
+            <ui-view> </ui-view>
+
+    <!--Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- <script src="app.js"></script> -->
+
+
+    <!--Modules-->
+    <script src="src/modules/data.module.js"></script>
+    <script src="src/modules/menuapp.module.js"></script>
+
+
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+
+    <!--Artifacts Injection -->
+    <script src="src/service/menudata.service.js"></script>
+    <script src="src/items/items.component.js"></script>
+    <script src="src/categories/categories.component.js"></script>
+    <script src="src/categories/category.controller.component.js"></script>
+    <script src="src/items/items.controller.component.js"></script>
+
+
+</body>
+</html>

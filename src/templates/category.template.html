@@ -1,0 +1,8 @@
+<h3><i> Click on one of the categories to see the full menu and price </i></h3>
+<ul>
+  <li ng-repeat="item in $ctrl.items" >
+        <button  ui-sref="items({categoryShortName: item.short_name})">
+              {{ item.name }}
+        </button>
+  </li>
+</ul>
